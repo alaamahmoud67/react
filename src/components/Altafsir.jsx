@@ -9,13 +9,8 @@ import Aldetails from './Aldetails'
 export default function Altafsir() {
     const [first, setFirst] = useState ([])
     const gett= async () => {
-		const response = await axios.get(
-			"http://api.alquran.cloud/v1/meta");
-		setFirst(response.data.data.surahs.references);
-    // console.log(response.data.data.surahs.references);
-    
-   
-	};
+		const response = await axios.get("http://api.alquran.cloud/v1/meta");
+		setFirst(response.data.data.surahs.references);};
 
 
 
